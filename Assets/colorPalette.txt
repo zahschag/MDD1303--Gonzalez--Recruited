@@ -5,23 +5,23 @@
 
 
 
-*** Primary Color:
+*** Primary Color: Light blue
 
-   var. 1 = #00C7FF = rgb(0,199,255)
+   var. 1 = #00C7FF = rgb(0,199,255) //being used
    var. 2 = #3C899F = rgb(60,137,159)
-   var. 3 = #005E79 = rgb(0,94,121)
+   var. 3 = #005E79 = rgb(0,94,121) //being used
    var. 4 = #4FD8FF = rgb(79,216,255)
    var. 5 = #8FE6FF = rgb(143,230,255)
 
-*** Secondary Color A:
+*** Secondary Color A: Purple
 
-   var. 1 = #9800FF = rgb(152,0,255)
+   var. 1 = #9800FF = rgb(152,0,255) //using
    var. 2 = #773C9F = rgb(119,60,159)
    var. 3 = #480079 = rgb(72,0,121)
    var. 4 = #B84FFF = rgb(184,79,255)
    var. 5 = #D28FFF = rgb(210,143,255)
 
-*** Secondary Color B:
+*** Secondary Color B: Green
 
    var. 1 = #D3FF00 = rgb(211,255,0)
    var. 2 = #8E9F3C = rgb(142,159,60)

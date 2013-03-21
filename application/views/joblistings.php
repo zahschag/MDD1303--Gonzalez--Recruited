@@ -1,4 +1,4 @@
-<div class="navbar navbar-inverse navbar-fixed-top">
+ <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
           <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -9,9 +9,9 @@
           <a class="brand" href="#">Recruited</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
-              <li><a href="frontpage.php">Home</a></li>
-              <li><a href="signup.php">Sign Up!</a></li>
-              <li class="active"><a href="joblisting.php">Job Listing</a></li>
+              <li><a href="frontpage">Home</a></li>
+              <li><a href="signup">Sign Up!</a></li>
+              <li class="active"><a href="joblistings">Job Listing</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>

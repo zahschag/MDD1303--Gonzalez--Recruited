@@ -10,8 +10,8 @@
           <div class="nav-collapse collapse">
             <ul class="nav">
               <li class="active"><a href="#">Home</a></li>
-              <li><a href="signup.php">Sign Up!</a></li>
-              <li><a href="joblisting.php">Job Listing</a></li>
+              <li><a href="signup">Sign Up!</a></li>
+              <li><a href="joblistings">Job Listing</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -21,11 +21,9 @@
   <div class="container-fluid">
 <br/>
     <h1> Welcome to Recruited</h1>
-     <article class="span4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis semper elit quis odio ultricies eget varius quam fringilla. Curabitur et tortor ut massa pulvinar iaculis quis sit amet elit. Mauris ac turpis in erat hendrerit semper. Duis ut tempus sapien. Quisque ultrices dui ut justo tincidunt ut ornare est tincidunt. Vivamus molestie lorem eu urna pellentesque quis mattis eros venenatis. Vestibulum vehicula ante eget magna faucibus pellentesque. Proin imperdiet sollicitudin eros, eget tincidunt felis vestibulum vel. Donec sit amet nulla tortor, vel dictum purus. In non est et augue faucibus gravida. Morbi iaculis ipsum nulla, vitae iaculis nisl.
-     
-       	 <ul>
-     		<li class="nav span3"><a href="#">This is an example of a link in the body</a></li>
-   		 </ul>
-     
+     <article class="span4">
+     	Recruited is a freelance project app powered by the freelancer API where you will be able to monitor and apply for different 
+     	freelance projects, for full access become a member of our growing community of freelancers
+     	<button class="btn"><a href="signup">Sign up!</a></button>
      </article>
 </div> <!-- /container -->

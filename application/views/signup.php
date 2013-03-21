@@ -9,9 +9,9 @@
           <a class="brand" href="#">Recruited</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
-              <li><a href="frontpage.php">Home</a></li>
-              <li class="active"><a href="signup.php">Sign Up!</a></li>
-              <li><a href="joblisting.php">Job Listing</a></li>
+              <li><a href="frontpage">Home</a></li>
+              <li class="active"><a href="signup">Sign Up!</a></li>
+              <li><a href="joblistings">Job Listing</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>

@@ -1,4 +1,4 @@
-<?php if (!defined('BASEPATH')) die();
+<?php
 class Signup extends CI_Controller {
 	public function index()
 	{
@@ -8,6 +8,6 @@ class Signup extends CI_Controller {
 	
 	}
 }
-
+?>
 /*End of signup.php */
 /*Location: ./application/controllers/signup.php */

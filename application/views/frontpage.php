@@ -23,12 +23,12 @@
       </div>
     </div>
 
-  <div class="container-fluid">
+  <div class="container-fluid span6">
 <br/>
     <h1> Welcome to Recruited</h1>
      <article class="span4">
      	Recruited is a freelance project app powered by the freelancer API where you will be able to monitor and apply for different 
      	freelance projects, for full access become a member of our growing community of freelancers
-     	<button class="btn btn-large" href="signup">Sign up!</button>
+     	<button class="css3button" href="signup">Sign up!</button>
      </article>
 </div> <!-- /container -->

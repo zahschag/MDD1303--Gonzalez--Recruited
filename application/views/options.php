@@ -10,15 +10,18 @@
           <div class="nav-collapse collapse">
             <ul class="nav">
               <li><a href="frontpage">Home</a></li>
-              <li><a href="signup">Sign Up!</a></li>
-              <li class="active"><a href="joblisting">Job Listing</a></li>
+              <li class="active"><a href="signup">Sign Up!</a></li>
+              <li><a href="joblisting">Job Listing</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
       </div>
     </div>
-<div class="container-fluid">
-</br>
-	<h1 class='span4'>Job Listings</h1>
-
-</div>
+    
+  <div class='container'>
+  
+  <h2>Create</h2>
+  
+  <?php echo form_open('site/create');?>
+  <?php echo form_close()?>
+  </div>

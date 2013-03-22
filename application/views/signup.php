@@ -18,21 +18,21 @@
       </div>
     </div>
 <div class="container-fluid signup-cont-bg">
-	<form class="in-style">
+	<form method="post" target="_self" class="span5 in-style">
 		<fieldset>
-			<legend>Sign up!</legend>
+			<legend class="stylecolor">Sign up!</legend>
 			
-			<label>Name</label>
-				<input type="text" placeholder="Name" class="span3">
-			<label>Last Name</label>
-				<input type="text" placeholder="Last Name" class="span3">
-			<label>Email</label>
-				<input type="email" placeholder="Email Address" class="span3">
-			<label>Username</label>
-				<input type="text" placeholder="Username" class="span3">
-			<label>Password</label>
-				<input type="password" placeholder="Password" class="span3"></br>
-			<button type="submit" class="btn">Sign Up</button>
+			<label class="stylecolor">Name</label>
+				<input type="text" placeholder="Name" class="span3 coststyle">
+			<label class="stylecolor">Last Name</label>
+				<input type="text" placeholder="Last Name" class="span3 coststyle">
+			<label class="stylecolor">Email</label>
+				<input type="email" placeholder="Email Address" class="span3 coststyle">
+			<label class="stylecolor">Username</label>
+				<input type="text" placeholder="Username" class="span3 coststyle">
+			<label class="stylecolor">Password</label>
+				<input type="password" placeholder="Password" class="span3 coststyle"></br>
+			<button type="submit" class="signupbtn">Sign Up</button>
 	</fieldset>
 	</form>
 </div>

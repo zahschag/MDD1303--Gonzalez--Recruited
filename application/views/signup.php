@@ -17,22 +17,23 @@
         </div>
       </div>
     </div>
-<div class="container-fluid">
-	<form>
+<div class="container-fluid signup-cont-bg">
+	<form class="in-style">
 		<fieldset>
 			<legend>Sign up!</legend>
 			
 			<label>Name</label>
-				<input type="text" placeholder="Name">
+				<input type="text" placeholder="Name" class="span3">
 			<label>Last Name</label>
-				<input type="text" placeholder="Last Name">
+				<input type="text" placeholder="Last Name" class="span3">
 			<label>Email</label>
-				<input type="email" placeholder="Email Address">
+				<input type="email" placeholder="Email Address" class="span3">
 			<label>Username</label>
-				<input type="text" placeholder="Username">
+				<input type="text" placeholder="Username" class="span3">
 			<label>Password</label>
-				<input type="password" placeholder="Password">
+				<input type="password" placeholder="Password" class="span3"></br>
 			<button type="submit" class="btn">Sign Up</button>
 	</fieldset>
 	</form>
 </div>
+<div class="signup-cont-bg"></div>

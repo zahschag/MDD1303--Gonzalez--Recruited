@@ -5,6 +5,7 @@ class Joblisting extends CI_Controller{
 public function index()
 	{
 	//Loading the model
+	
 	$this->load->model('data_model');
 	$data['rows'] = $this->data_model->getAll();
 	

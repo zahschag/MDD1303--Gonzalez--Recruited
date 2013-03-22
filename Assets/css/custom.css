@@ -1,7 +1,30 @@
 /**
  * All your custom CSS should go into this file
  */
+ /*Blues*/
+.primary-1 { background-color: #00C7FF }
+.primary-3 { background-color: #005E79 }
+
+ /*Purples*/
+.secondary-a-1 { background-color: #9800FF }
+.secondary-a-2 { background-color: #773C9F }
+
+ /*Greens*/
+.secondary-b-1 { background-color: #D3FF00 }
+
+
 
 body {
    padding-top: 15px;
+}
+/*b*/
+.signup-cont-bg{
+	max-width:100%;
+	background: url('../img/signupbg.jpg'), repeat;
+	
+}
+.in-style{
+	size:100%;
+	background: #773C9F;
+	
 }

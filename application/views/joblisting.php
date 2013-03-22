@@ -11,7 +11,7 @@
             <ul class="nav">
               <li><a href="frontpage">Home</a></li>
               <li><a href="signup">Sign Up!</a></li>
-              <li class="active"><a href="joblistings">Job Listing</a></li>
+              <li class="active"><a href="joblisting">Job Listing</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>

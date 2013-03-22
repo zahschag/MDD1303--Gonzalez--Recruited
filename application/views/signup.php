@@ -11,15 +11,28 @@
             <ul class="nav">
               <li><a href="frontpage">Home</a></li>
               <li class="active"><a href="signup">Sign Up!</a></li>
-              <li><a href="joblistings">Job Listing</a></li>
+              <li><a href="joblisting">Job Listing</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
       </div>
     </div>
 <div class="container-fluid">
-
-	<h1>Sign Up!</h1>
-	
-
+	<form>
+		<fieldset>
+			<legend>Sign up!</legend>
+			
+			<label>Name</label>
+				<input type="text" placeholder="Name">
+			<label>Last Name</label>
+				<input type="text" placeholder="Last Name">
+			<label>Email</label>
+				<input type="email" placeholder="Email Address">
+			<label>Username</label>
+				<input type="text" placeholder="Username">
+			<label>Password</label>
+				<input type="password" placeholder="Password">
+			<button type="submit" class="btn">Sign Up</button>
+	</fieldset>
+	</form>
 </div>

@@ -4,14 +4,15 @@ class Joblisting extends CI_Controller{
 
 public function index()
 	{
-
+	//Loading the model
+	$this->load->model('data_model');
+	$data['rows'] = $this->data_model->getAll();
+	
+	//Loading the views
 	$this->load->view('include/header');
-	$this->load->view('joblisting');
+	$this->load->view('joblisting', $data);
 	$this->load->view('include/footer');
 	}
 	
 }
 ?>
-
-/*En of file joblisting.php*/
-/*Location: ./application/controllers/joblisting.php */

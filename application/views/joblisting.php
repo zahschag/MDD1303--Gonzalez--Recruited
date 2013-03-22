@@ -20,6 +20,10 @@
 <div class="container-fluid">
 
 	<h1>Job Listings</h1>
-	
+		<?php foreach ($rows as $r){
+			echo '<h1>' . $r->user . </h1>
+		}
+		
+		?>
 
 </div>

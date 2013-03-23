@@ -18,7 +18,7 @@
       </div>
     </div>
 <div class="container-fluid signup-cont-bg">
-	<form method="post" target="_self" class="span5 in-style">
+	<form method="post" target="_self" class="span5 in-style">	
 		<fieldset>
 			<legend class="stylecolor">Sign up!</legend>
 			
@@ -36,4 +36,5 @@
 	</fieldset>
 	</form>
 </div>
+
 <div class="signup-cont-bg"></div>

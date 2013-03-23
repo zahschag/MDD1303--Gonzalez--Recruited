@@ -4,6 +4,7 @@ class Signup extends CI_Controller {
 	{
 		$this->load->view('include/header'); /*Will load the header*/
 		$this->load->view('signup');/* Sign up page */
+		$this->load->helper('form');
 		$this->load->view('include/footer'); /*Will load the footer from the include folder in the view*/
 	
 	}

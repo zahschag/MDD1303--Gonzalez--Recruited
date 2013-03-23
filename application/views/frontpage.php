@@ -13,10 +13,10 @@
               <li><a href="signup">Sign Up!</a></li>
               <li><a href="joblisting">Job Listing</a></li>
             </ul>
-           <form class="form-inline span4 offset2">
+           <form action= "" method="POST" class="form-inline offset5">
             	<input type="text" class="input-small" placeholder="username">
             	<input type="password" class="input-small" placeholder="password">
-            	
+            	<button type="submit" value="Submit" class="btn">Submit</button>
             </form>
           </div><!--/.nav-collapse -->
         </div>

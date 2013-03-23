@@ -1,7 +1,7 @@
 <?php
 
 
-class Site_model extends Model{
+class Signup_model extends Model{
 	
 	function newuser(){
 		

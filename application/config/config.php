@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://localhost:8888/MDD1303--Gonzalez--Recruited';
+$config['base_url']	= 'http://localhost:8888/MDD1303--Gonzalez--Recruited/';
 
 /*
 |--------------------------------------------------------------------------
@@ -30,7 +30,7 @@ $config['base_url']	= 'http://localhost:8888/MDD1303--Gonzalez--Recruited';
 | to the CDN. 
 |
 */
-$config['cdn_url']	= '';
+$config['cdn_url']	= '../assets/';
 
 /*
 |--------------------------------------------------------------------------

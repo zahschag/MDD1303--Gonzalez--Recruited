@@ -4,37 +4,48 @@ class Signup extends CI_Controller {
 	{
 		$this->load->view('include/header'); /*Will load the header*/
 		$this->load->view('signup');/* Sign up page */
-		$this->load->helper('form');
 		$this->load->view('include/footer'); /*Will load the footer from the include folder in the view*/
 	
 	}
-	public function create()
+	/***
+		The create function will prepare the 
+		fields to get information passed in
+		this information will be sent to 
+		the database where it will be stored
+		for further use
+		
+		The $this->input->post
+	
+	***/
+		public function create()
 	{
 		$users = array(
+			'user_id' => $this->input->post('id'),
 			'user_fullname' => $this->input->post('fullname'),
 			'lastname' => $this->input->post('lastname'),
-			'email' => $this->input->post('emailadd'),
+			'email' => $this->input->post('email'),
 			'user_name' => $this->input->post('username'),
 			'user_password' => $this->input->post('password')
 		);
-		$this->signup_model->newuser($users);
-		$this->index();	
+		$this->load->model('Signup_model');
+		$this->Signup_model->newuser($users);
 	}
 	public function update()
 	{
 		$users = array(
-			'email' => $title,
+			'email' => $email,
 			'user_password' => $password
 		);
-		$this->signup_model->userupdate($users);
+		$this->Signup_model->userupdate($users);
 	}
 	
 	public function delete(){
 		
-		$this->signup_model->deleteuser();
+		$this->Signupmodel->deleteuser();
 		$this->index(); 
 		}
 }
-?>
+
 /*End of signup.php */
 /*Location: ./application/controllers/signup.php */
+?>

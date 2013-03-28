@@ -1,12 +1,31 @@
-<?php if (!defined('BASEPATH')) die();
+<?php
+class Login extends CI_Controller{
 
-class Login index()
+public function index()
 {
-	$this->load->view('include/header'); /*Will load the header*/
-	$this->load->view('template/login');/* Will load the template of the form */
-	$this->load->view('include/footer'); /*Will load the footer from the include folder in the view*/
-	
-}
+	$this->load->view ('include/header');
+	$this->load->view('login');
+	$this->load->view('include/footer');
 
-/*End of login.php */
-/*Location: ./application/controllers/login.php */
+	if($_SERVER["REQUEST_METHOD"] == "POST"){
+		$MY_username = addslashes($_POST['username']);
+		$MY_password = addslashes($_POST['password']);
+	
+		$sql="SELECT id FROM users WHERE user_name='$MY_username' and user_passwor='$MY_password'";
+		$result= mysql_query($sql);
+		$row= mysql_fetch_array($result);
+		$active= $row['active'];
+		$count= mysql_num_rows($result);
+	
+		if(count==1)
+		{
+		session_register("MYusername");
+		$_SESSION["login_user"]= $MY_username;
+	
+		header('location:success.php');	
+		}else{
+			$error= 'Your Login Name or Password is invalid';
+			}
+	}
+}
+}

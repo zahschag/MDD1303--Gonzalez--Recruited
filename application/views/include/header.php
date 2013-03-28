@@ -34,6 +34,7 @@
               <li><a href="frontpage">Home</a></li>
               <li><a href="signup">Sign Up!</a></li>
               <li><a href="joblisting">Job Listing</a></li>
+              <li><a href="about">About us</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>

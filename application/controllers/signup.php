@@ -1,5 +1,6 @@
 <?php
 class Signup extends CI_Controller {
+
 	public function index()
 	{
 		$this->load->view('include/header'); /*Will load the header*/
@@ -41,7 +42,7 @@ class Signup extends CI_Controller {
 	
 	public function delete(){
 		
-		$this->Signupmodel->deleteuser();
+		$this->Signup_model->deleteuser();
 		$this->index(); 
 		}
 }

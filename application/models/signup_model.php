@@ -1,13 +1,21 @@
 <?php
 
-class Signupmodel extends CI_Model{
-
+class Signup_model extends CI_model{
+private $db;
+	public function __construct($mydns, $myuser, $mypass){
+		try{
+			$this->db = new \PDO($mydns, $myuser, $mypass);
+			
+			}//try function
+			catch(\PDOException $l){
+				var_dump($l);
+			}//catch function
+		}//construct function
 	function getuserinfo(){
 		$this->db->get('user_id', 5);
 		$this->db->get('user_fullname');
 		$this->db->get('lastname');
 		$this->db->get('user_name');
-		$this->db->get('mdd5(`password`)+ "user_salt"');
 		$this->db->get('email');
 		return $query->result();
 	}

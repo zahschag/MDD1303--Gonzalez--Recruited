@@ -3,10 +3,15 @@
 	
 	<?php 
 	$attributes = array('class'=>'in-style span4');
-	echo form_open('signup/create', $attributes);
+	echo form_open('form', $attributes);
 	?>
 	<?php
+	/***
+		Arrays for the input fields
+		will echo in the browser
+		<input type="" class="" name="" value=""></input>
 
+	***/
 	$fullname = array(
 		'name' => 'fullname',
 		'class' => 'coststyle span4',
@@ -33,9 +38,12 @@
 	$passw = array(
 		'name' => 'password',
 		'type' => 'password',
-		'class' => 'coststyle span4',
-		'value' => set_value('password')	
+		'class' => 'coststyle span4'
+		//'value' => set_value('password')	
 	);
+	/*Array that creates the button tag inside the button, when the array is echoed into the for_submit($var)
+	The browser displays
+	<button style="margin-left:18%" type="submit" name="button" id="btn" class="span4 value="Sign up"></buttno> */
 	$signbtn = array(
 		'name' => "button",
 		'id' => 'btn',

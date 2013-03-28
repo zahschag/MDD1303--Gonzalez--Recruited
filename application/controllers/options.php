@@ -13,7 +13,3 @@ class Options extends CI_Controller{
 	
 	
 }
-
-
-
-?>

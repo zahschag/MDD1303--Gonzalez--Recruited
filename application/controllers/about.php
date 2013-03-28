@@ -1,5 +1,5 @@
 <?php
-class Frontpage extends CI_Controller {
+class About extends CI_Controller {
 
    public function index()
 	{

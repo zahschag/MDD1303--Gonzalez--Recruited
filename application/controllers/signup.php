@@ -18,35 +18,33 @@ class Signup extends CI_Controller {
 		The $this->input->post
 	
 	***/
-		public function create()
+		public function new_user()
 	{
-		$users = array(
-			'user_id' => $this->input->post('id'),
-			'user_fullname' => $this->input->post('fullname'),
+		session_start();
+		$this->load->model('User');
+		$this->User->create(
+		array(
+			'id' => $this->input->post('id'),
+			'fullname' => $this->input->post('fullname'),
 			'lastname' => $this->input->post('lastname'),
 			'email' => $this->input->post('email'),
-			'user_name' => $this->input->post('username'),
-			'user_password' => $this->input->post('password')
+			'un' => $this->input->post('username'),
+			'pass' => $this->input->post('password')
+			)
 		);
-		$this->load->model('Signup_model');
-		$this->Signup_model->newuser($users);
-	}
-	public function update()
-	{
-		$users = array(
-			'email' => $email,
-			'user_password' => $password
+		if($user){
+			$this->response(
+			array( "done" => "true"),
+			200
 		);
-		$this->Signup_model->userupdate($users);
-	}
-	
-	public function delete(){
-		
-		$this->Signup_model->deleteuser();
-		$this->index(); 
 		}
+		else{
+			$this->response(
+			array ("done" => "false"),
+			403
+			);
+		}
+	}
 }
-
 /*End of signup.php */
 /*Location: ./application/controllers/signup.php */
-?>

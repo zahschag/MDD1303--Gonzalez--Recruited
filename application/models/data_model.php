@@ -13,14 +13,5 @@ class Data_model extends CI_Model {
 			}
 			return $data;
 		}
-	function newuser(){
-		$this->input->post('user_id');
-		$this->input->post('user_fullname');
-		$this->input->post('lastname');
-		$this->input->post('email');
-		$this->input->post('user_name');
-		$this->input->post('md5(`user_passsword`)');
-		}
-		
 	}
 }

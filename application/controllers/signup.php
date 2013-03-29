@@ -20,6 +20,7 @@ class Signup extends CI_Controller {
 	***/
 		public function new_user()
 	{
+		$this->load->helper('form');
 		session_start();
 		$this->load->model('User');
 		$this->User->create(

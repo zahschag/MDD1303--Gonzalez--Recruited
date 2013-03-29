@@ -3,7 +3,7 @@
 	
 	<?php 
 	$attributes = array('class'=>'in-style span4');
-	echo form_open('signup', $attributes);
+	echo form_open('success', $attributes);
 	?>
 	<?php
 	/***

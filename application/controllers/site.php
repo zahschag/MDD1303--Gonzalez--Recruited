@@ -7,7 +7,7 @@ class Site extends CI_controller {
 		$data['rows'] = $this->data_model->getAll();
 		
 		$this->load->view('include/header');
-		$this->load->view('site', $data);
+		$this->load->view('userView', $data);
 		$this->load->view('include/footer');
 	}
 	

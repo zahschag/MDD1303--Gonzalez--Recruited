@@ -35,6 +35,7 @@
               <li><a href="signup">Sign Up!</a></li>
               <li><a href="joblisting">Job Listing</a></li>
               <li><a href="about">About us</a></li>
+              <li><a href="userView">Profile</a></li>
             </ul>
             
            <form class="navbar-form pull-right">

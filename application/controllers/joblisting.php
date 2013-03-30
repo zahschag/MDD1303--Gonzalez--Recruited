@@ -10,7 +10,7 @@ public function index()
 		
 		if($this->form_validation->run() == FALSE)
 		{
-			header("Location:frontpage");	
+			header("Location:frontpage");
 		}
 		else{
 			$this->load->view('joblisting');

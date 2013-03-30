@@ -42,18 +42,7 @@ class Signup extends CI_Controller {
 			'pass' => $this->input->post('password')
 			)
 		);
-		if($user){
-			$this->response(
-			array( "done" => "true"),
-			200
-		);
-		}
-		else{
-			$this->response(
-			array ("done" => "false"),
-			403
-			);
-		}
+		
 	}
 }
 /*End of signup.php */

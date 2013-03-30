@@ -13,6 +13,13 @@ public function index()
 	$this->load->view('include/header');
 	$this->load->view('joblisting');
 	$this->load->view('include/footer');
+	if($this->form_validation->run() == FALSE)
+		{
+			$this->load->view('frontpage');	
+		}
+		else{
+			$this->load->view('success');
+			}
 	}
 	
 }

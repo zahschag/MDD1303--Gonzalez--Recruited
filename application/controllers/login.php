@@ -6,6 +6,8 @@ public function index()
 	$this->load->view ('include/header');
 	$this->load->view('login');
 	$this->load->view('include/footer');
+	$this->load->helper('form');
+	$this->load->library('form_validation');
 
 	if($_SERVER["REQUEST_METHOD"] == "POST"){
 		$MY_username = addslashes($_POST['username']);
@@ -19,7 +21,7 @@ public function index()
 	
 		if(count==1)
 		{
-		session_register("MYusername");
+		session_register("MY_username");
 		$_SESSION["login_user"]= $MY_username;
 	
 		header('location:success.php');	

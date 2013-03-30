@@ -3,9 +3,20 @@ class Signup extends CI_Controller {
 
 	public function index()
 	{
+		$this->load->model('User');
 		$this->load->view('include/header'); /*Will load the header*/
 		$this->load->view('signup');/* Sign up page */
 		$this->load->view('include/footer'); /*Will load the footer from the include folder in the view*/
+		$this->load->helper('form');
+		$this->load->library('form_validation');
+		
+		if($this->form_validation->run() == FALSE)
+		{
+			$this->load->view('signup');	
+		}
+		else{
+			$this->load->view('success');
+			}
 	
 	}
 	/***
@@ -20,9 +31,7 @@ class Signup extends CI_Controller {
 	***/
 		public function new_user()
 	{
-		$this->load->helper('form');
 		session_start();
-		$this->load->model('User');
 		$this->User->create(
 		array(
 			'id' => $this->input->post('id'),

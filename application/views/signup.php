@@ -1,8 +1,6 @@
 <div class="container-fluid signup-cont-bg">
-
-	
 	<?php 
-	$attributes = array('class'=>'in-style span4');
+	$attributes = array('class'=>'in-style span4 pull-left ');
 	echo form_open('success', $attributes);
 	?>
 	<?php
@@ -14,31 +12,31 @@
 	***/
 	$fullname = array(
 		'name' => 'fullname',
-		'class' => 'coststyle span4',
+		'class' => 'coststyle span4 pull-left',
 		'value' => set_value('name')
 		
 	);
 	
 	$lastname = array(
 		'name' => 'lastname',
-		'class' => 'coststyle span4',
+		'class' => 'coststyle span4 pull-left',
 		'value' => set_value('last')	
 	);
 	$email = array(
 		'name' => 'email',
-		'class' => 'coststyle span4',
+		'class' => 'coststyle span4 pull-left',
 		'value' => set_value('email')
 	);
 	
 	$user = array(
 		'name' => 'username',
-		'class' => 'coststyle span4',
+		'class' => 'coststyle span4 pull-left',
 		'value' => set_value('username')
 	);
 	$passw = array(
 		'name' => 'password',
 		'type' => 'password',
-		'class' => 'coststyle span4'
+		'class' => 'coststyle span4 pull-left'
 		//'value' => set_value('password')	
 	);
 	/*Array that creates the button tag inside the button, when the array is echoed into the for_submit($var)
@@ -47,7 +45,7 @@
 	$signbtn = array(
 		'name' => "button",
 		'id' => 'btn',
-		'class'=> 'span4',
+		'class'=> 'span4 pull-left',
 		'value' => 'Sign Up',
 		'type' => 'submit',
 		'style' =>'margin-left:18%;'

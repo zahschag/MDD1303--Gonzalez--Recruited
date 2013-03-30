@@ -3,22 +3,12 @@ class Signup extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->model('User');
 		$this->load->view('include/header'); /*Will load the header*/
 		$this->load->view('signup');/* Sign up page */
 		$this->load->view('include/footer'); /*Will load the footer from the include folder in the view*/
+		$this->load->model('User');
 		$this->load->helper('form');
-		$this->load->library('form_validation');
-		
-		if($this->form_validation->run() == FALSE)
-		{
-			$this->load->view('signup');	
-		}
-		else{
-			$this->load->view('success');
-			}
 	
-	}
 	/***
 		The create function will prepare the 
 		fields to get information passed in
@@ -29,7 +19,7 @@ class Signup extends CI_Controller {
 		The $this->input->post
 	
 	***/
-		public function new_user()
+	 function new_user($id, $name, $lastname, $email, $un, $pass)
 	{
 		session_start();
 		$this->User->create(
@@ -43,6 +33,7 @@ class Signup extends CI_Controller {
 			)
 		);
 		
+	}
 	}
 }
 /*End of signup.php */

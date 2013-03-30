@@ -36,6 +36,11 @@
               <li><a href="joblisting">Job Listing</a></li>
               <li><a href="about">About us</a></li>
             </ul>
+            
+           <form class="navbar-form pull-right">
+           <input class="span2" type="text" placeholder="Email">
+           </input><input class="span2" type="password" placeholder="Password">
+           </input><button class="btn" type="submit">  Sign in </button></form></div>
           </div><!--/.nav-collapse -->
         </div>
       </div>

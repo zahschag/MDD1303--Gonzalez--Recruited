@@ -1,6 +1,6 @@
 <?php
 class Logged_user extends CI_Model{
-	
+	$this->load->db();
 	private static $user;
 	
 	private function __construct(){}

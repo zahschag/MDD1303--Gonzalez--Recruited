@@ -1,4 +1,5 @@
 <?php
+require_once('db.php');
 
 class User extends CI_Model{
 	var $id = 0;
@@ -10,7 +11,9 @@ class User extends CI_Model{
 	
 	
 	public function login($un, $pass){
-		//Will help find the user information in the database
+		$this->load->db();
+		/*Will help find the user information in the database*/
+		$this->db->get('users');
 		$sql = "SELECT * 
 				FROM `users`
 				WHERE `user_name = ?

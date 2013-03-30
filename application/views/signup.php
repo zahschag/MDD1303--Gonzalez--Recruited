@@ -1,7 +1,7 @@
 <div class="container-fluid signup-cont-bg">
 	<?php 
 	$attributes = array('class'=>'in-style span4 pull-left ');
-	echo form_open('signup/success', $attributes);
+	echo form_open('signup/submit', $attributes);
 	?>
 	<?php
 	/***

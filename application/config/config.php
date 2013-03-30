@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://localhost:8888/MDD1303--Gonzalez--Recruited/';
+$config['base_url']	= 'http://localhost/MDD1303--Gonzalez--Recruited/';
 
 /*
 |--------------------------------------------------------------------------

@@ -1,9 +1,9 @@
 <?php
-class Signup extends CI_Controller {
+class Signup extends Main_Controller {
 
 
 	public function __construct(){
-		parent::Controller();
+		parent::CI_Controller();
 		
 		
 		$this->load->helper(array("form", "url"));
